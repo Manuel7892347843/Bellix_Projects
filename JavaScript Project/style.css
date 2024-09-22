@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin-top: 10vh;
+    background: url(backiee-124663-landscape.jpg);
+    color: white;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 5%;
+}
+
+ul li{
+    text-align: center;
+    list-style-type: none;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 label {
+    font-weight: bold;
+}
+
+.container1 input{
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-right: 5%;
+}
+
+button:hover{
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 1);
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+  
+label, input {
+    margin: 5px; 
+    border-radius: 15px;
+    text-align: center;
+}
+
+#num1{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#num2{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+  
+.lista li {
+    list-style-type: none;
+}
+
+.blur-box{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+footer{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5%;
+}
