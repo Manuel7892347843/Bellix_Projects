@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(img/minimal_002.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #4C6279;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 20%;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -10%;
+}
+
+.centro {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    border-radius: 20px;
+    height: 7vh;
+    width: 20vh;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.centro:hover {
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-bottom: -20%;
+}
+
+.clickable-image {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+.blur-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin: 35% auto;
+    max-width: 900px;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens with a maximum width of 1200px */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+    .clickable-image {
+        width: 150px;
+    }
+    .blur-box {
+        max-width: 700px;
+    }
+}
+
+/* For screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .centro {
+        font-size: 25px;
+        height: 5vh;
+        width: 15vh;
+    }
+    .clickable-image {
+        width: 100px;
+    }
+    .blur-box {
+        max-width: 500px;
+    }
+}
+
+/* For screens with a maximum width of 600px */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .centro {
+        font-size: 20px;
+        height: 4vh;
+        width: 10vh;
+    }
+    .clickable-image {
+        width: 80px;
+    }
+    .blur-box {
+        max-width: 300px;
+    }
+}
+
+/* For screens with a maximum width of 400px */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .centro {
+        font-size: 15px;
+        height: 3vh;
+        width: 8vh;
+    }
+    .clickable-image {
+        width: 60px;
+    }
+    .blur-box {
+        max-width: 200px;
+    }
+}
