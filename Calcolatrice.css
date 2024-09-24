@@ -14,6 +14,98 @@ body{
     background-position: center;
 }
 
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .icon {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+h6{
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 15%;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobile devices) */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+    header .icon {
+        font-size: 2.5em;
+    }
+    header ul {
+        font-size: 1rem;
+    }
+    header ul li {
+        margin-left: 10px;
+    }
+    header ul li a {
+        padding: 4px 10px;
+    }
+}
+
+/* For screens smaller than 480px (small mobile devices) */
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 15px 30px;
+    }
+    header .icon {
+        font-size: 2em;
+    }
+    header ul {
+        font-size: 0.9rem;
+    }
+    header ul li {
+        margin-left: 5px;
+    }
+    header ul li a {
+        padding: 2px 8px;
+    }
+}
+
 h1{
     text-align: center;
     font-size: 50px;

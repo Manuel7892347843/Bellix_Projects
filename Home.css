@@ -17,6 +17,52 @@ body {
     background-color: #4C6279;
 }
 
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .icon {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
 h1 {
     text-align: center;
     font-size: 70px;
@@ -29,9 +75,17 @@ p {
     margin-bottom: -10%;
 }
 
+h6{
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 15%;
+}
+
 .centro {
     display: block;
     margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: -10%;
     font-size: 30px;
     border-radius: 20px;
     height: 7vh;
@@ -81,7 +135,102 @@ a {
     max-width: 900px;
 }
 
-/* Media queries for responsiveness */
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
+.container-1{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer{
+    background: linear-gradient(#4C6279, blue);
+    padding: 70px 0;
+    position: relative;
+    margin-top: -30%;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    list-style: none;
+
+}
+li 
+{
+    list-style: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add this to the existing CSS */
 
 /* For screens with a maximum width of 1200px */
 @media (max-width: 1200px) {
@@ -93,6 +242,9 @@ a {
     }
     .blur-box {
         max-width: 700px;
+    }
+    .footer-col {
+        width: 33.33%;
     }
 }
 
@@ -115,6 +267,9 @@ a {
     .blur-box {
         max-width: 500px;
     }
+    .footer-col {
+        width: 50%;
+    }
 }
 
 /* For screens with a maximum width of 600px */
@@ -136,6 +291,9 @@ a {
     .blur-box {
         max-width: 300px;
     }
+    .footer-col {
+        width: 100%;
+    }
 }
 
 /* For screens with a maximum width of 400px */
@@ -156,5 +314,29 @@ a {
     }
     .blur-box {
         max-width: 200px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* Add this to make the footer responsive */
+.footer {
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-col {
+        width: 100%;
     }
 }
